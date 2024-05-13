@@ -1,13 +1,16 @@
-
 pipeline{
-    agen any
+    agent any
 
     stages{
       stage("Build"){
+            steps{
           sh 'pwd'
+        }
       }
       stage("clean up"){
+        steps{
         sh 'echo "Cleaning something" '
+        }
       }
     }
 }
