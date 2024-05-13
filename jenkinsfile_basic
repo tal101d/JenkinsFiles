@@ -6,7 +6,7 @@ pipeline {
             steps {
                 echo 'Building..'
                 sh 'pwd'       
-                sh ' git clone "https://github.com/tal101d/Stock-API.git"
+                sh ' git clone "https://github.com/tal101d/Stock-API.git"'
             }
         }
         stage('Test') {
