@@ -5,6 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
+                sh 'pwd'
                 sh 'git clone "https://github.com/tal101d/Stock-API.git" '
             }
         }
